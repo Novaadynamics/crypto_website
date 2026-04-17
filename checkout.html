@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deposit — Bitcoin Brokerage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .checkout-page {
+      min-height: 100vh;
+      background: var(--bg-dark);
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    .checkout-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      box-shadow: var(--shadow);
+    }
+    .checkout-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .checkout-sub {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+    .checkout-divider {
+      border-color: var(--border-color);
+      margin: 28px 0;
+    }
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+    }
+    .info-row i { color: var(--primary); font-size: 14px; width: 18px; text-align: center; }
+    #helioCheckoutContainer { min-height: 200px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="logo-icon"><i class="fa-brands fa-bitcoin"></i></span>
+      <span class="logo-text">Bit<span class="text-accent">coin</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="toggler-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="checkout.html" class="btn btn-gradient">Deposit Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== CHECKOUT ===== -->
+<section class="checkout-page">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+
+      <!-- Left: info panel -->
+      <div class="col-lg-4 col-md-5 d-flex flex-column gap-4">
+        <div>
+          <div class="section-tag mb-3">
+            <i class="fa-brands fa-bitcoin"></i> Secure Deposit
+          </div>
+          <h1 class="checkout-title">Start Earning Today</h1>
+          <p class="checkout-sub">
+            Complete your Bitcoin deposit below. Our agents will begin working your funds within 24 hours of confirmation.
+          </p>
+        </div>
+
+        <div class="checkout-card">
+          <h6 class="fw-700 mb-3" style="color:#fff;font-weight:700;">What happens next?</h6>
+          <div class="info-row"><i class="fa-solid fa-circle-check"></i> Deposit confirmed on-chain</div>
+          <div class="info-row"><i class="fa-solid fa-circle-check"></i> Agent assigned within 24h</div>
+          <div class="info-row"><i class="fa-solid fa-circle-check"></i> 10% daily returns begin</div>
+          <div class="info-row"><i class="fa-solid fa-circle-check"></i> Withdraw anytime after 30 days</div>
+        </div>
+
+        <div class="checkout-card">
+          <h6 class="fw-700 mb-3" style="color:#fff;font-weight:700;">Need help?</h6>
+          <div class="info-row"><i class="fa-brands fa-telegram"></i> t.me/bitcoin_official</div>
+          <div class="info-row"><i class="fa-brands fa-discord"></i> discord.gg/bitcoin</div>
+          <div class="info-row"><i class="fa-solid fa-envelope"></i> support@bitcoin.io</div>
+        </div>
+      </div>
+
+      <!-- Right: Helio checkout widget -->
+      <div class="col-lg-6 col-md-7">
+        <div class="checkout-card">
+          <div id="helioCheckoutContainer"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  window.helioCheckout(
+    document.getElementById("helioCheckoutContainer"),
+    {
+      paylinkId: "69dfe6d31f69e1a1a10a9b78",
+      theme: { themeMode: "light" },
+      primaryColor: "#F7931A",
+      neutralColor: "#5A6578",
+    }
+  );
+});
+</script>
+</body>
+</html>
