@@ -30,7 +30,10 @@
 /* ----- Reset & Base ----- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: auto; }
+html {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--font);
@@ -271,6 +274,7 @@ body {
   align-items: center;
   padding-top: 80px;
   padding-bottom: 60px;
+  max-width: 100%;
 }
 
 .hero-row {
@@ -302,8 +306,8 @@ body {
   pointer-events: none;
 }
 
-.glow-1 { width: 500px; height: 500px; background: rgba(247,147,26,0.12); top: -100px; left: -100px; }
-.glow-2 { width: 400px; height: 400px; background: rgba(242,169,0,0.08); bottom: 0; right: 0; }
+.glow-1 { width: 400px; height: 400px; background: rgba(247,147,26,0.12); top: -100px; left: -50px; }
+.glow-2 { width: 350px; height: 350px; background: rgba(242,169,0,0.08); bottom: 0; right: -50px; }
 .glow-3 { width: 300px; height: 300px; background: rgba(255,200,50,0.06); top: 50%; right: 30%; }
 
 .hero-section .container { position: relative; z-index: 1; }
@@ -1713,8 +1717,9 @@ option { color: black; }
   position: absolute;
   width: 400px; height: 400px;
   background: radial-gradient(circle, rgba(247,147,26,0.15) 0%, transparent 70%);
-  top: -100px; right: -100px;
+  top: -100px; right: -50px;
   pointer-events: none;
+  overflow: hidden;
 }
 .mid-cta-box h2 { font-size: clamp(26px, 3vw, 38px); font-weight: 800; margin-bottom: 14px; }
 .mid-cta-box p { color: var(--text-secondary); font-size: 16px; max-width: 500px; }
