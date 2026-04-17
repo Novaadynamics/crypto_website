@@ -55,6 +55,11 @@ body {
 
 .text-accent { color: var(--accent); }
 
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgb(255 255 255 / 75%) !important;
+}
+
 .section-padding { padding: 100px 0; }
 
 .section-tag {
@@ -1374,6 +1379,8 @@ body {
 
 .contact-form .form-control:focus { border-color: rgba(247,147,26,0.5); background: rgba(247,147,26,0.04); }
 .contact-form .form-control::placeholder { color: var(--text-muted); }
+
+option { color: black; }
 
 .contact-form label { font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; display: block; }
 
