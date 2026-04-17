@@ -1383,9 +1383,11 @@ body {
   gap: 10px;
   text-decoration: none;
   margin-bottom: 16px;
+  color: #fff !important;
 }
 
-.footer-logo span.logo-text { font-size: 24px; font-weight: 800; color: #fff; }
+.footer-logo .logo-text { font-size: 24px; font-weight: 800; color: #fff !important; }
+.footer-logo .logo-icon { flex-shrink: 0; }
 
 .footer-brand p { color: var(--text-secondary); font-size: 15px; margin-bottom: 24px; line-height: 1.7; }
 
