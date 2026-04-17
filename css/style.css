@@ -1797,24 +1797,12 @@ body {
 }
 .proof-number span { font-size: 18px; font-weight: 600; }
 .proof-item p { color: var(--text-secondary); font-size: 14px; margin: 0; }
+/* ============================================================
+   RESPONSIVE — TABLET (≤ 991px)
+   ============================================================ */
 @media (max-width: 991.98px) {
-  .hero-coin-wrapper { width: 280px; height: 280px; }
-  .coin-center { width: 90px; height: 90px; font-size: 40px; }
-  .badge-1, .badge-2, .badge-3 { display: none; }
 
-  .roadmap-line { left: 20px; }
-  .roadmap-item { padding-right: 0; padding-left: 60px; justify-content: flex-start; }
-  .roadmap-item.right { padding-left: 60px; }
-  .roadmap-dot { left: 20px; }
-  .roadmap-content { max-width: 100%; }
-
-  .about-visual { height: 400px; }
-  .card-1 { top: 10px; left: 0; width: 220px; font-size: 13px; }
-  .card-2 { top: 140px; right: 0; width: 220px; font-size: 13px; }
-  .card-3 { bottom: 20px; left: 20px; width: 220px; font-size: 13px; }
-
-  .cta-box { padding: 40px 28px; }
-
+  /* Navbar */
   .navbar-collapse {
     background: rgba(13,10,0,0.98);
     border: 1px solid var(--border-color);
@@ -1822,32 +1810,121 @@ body {
     padding: 16px;
     margin-top: 8px;
   }
+  .navbar-nav .nav-link { padding: 12px 16px !important; border-bottom: 1px solid rgba(247,147,26,0.08); }
+  .navbar-nav .nav-link:last-child { border-bottom: none; }
+  .navbar-nav .btn-gradient { margin: 12px 16px 4px; width: calc(100% - 32px); justify-content: center; }
 
-  .navbar-nav .nav-link { padding: 10px 16px !important; }
-  .navbar-nav .btn-gradient { margin: 10px 16px 0; }
+  /* Hero */
+  .hero-section { padding-top: 100px; min-height: auto; padding-bottom: 60px; }
+  .hero-coin-wrapper { width: 280px; height: 280px; margin: 40px auto 0; }
+  .coin-center { width: 90px; height: 90px; font-size: 40px; }
+  .badge-1, .badge-2, .badge-3 { display: none; }
+  .trust-box { margin-top: 24px; }
+
+  /* Sections */
+  .section-padding { padding: 80px 0; }
+  .cta-box { padding: 40px 28px; }
+  .mid-cta-box { padding: 40px 28px; }
 }
 
+/* ============================================================
+   RESPONSIVE — MOBILE (≤ 767px)
+   ============================================================ */
 @media (max-width: 767.98px) {
-  .section-padding { padding: 70px 0; }
+  .section-padding { padding: 60px 0; }
 
-  .hero-title { font-size: 34px; }
+  /* Hero */
+  .hero-section { text-align: center; padding-top: 90px; }
+  .hero-title { font-size: 32px; letter-spacing: -0.5px; }
+  .hero-desc { font-size: 15px; margin-left: auto; margin-right: auto; }
+  .hero-badge { font-size: 10px; letter-spacing: 1.2px; padding: 6px 14px; }
+  .hero-buttons { justify-content: center; }
+  .hero-stats { text-align: center; }
   .hero-stats .stat-item h3 { font-size: 20px; }
+  .hero-coin-wrapper { width: 220px; height: 220px; }
+  .coin-center { width: 72px; height: 72px; font-size: 32px; }
+  .trust-box { width: 100%; }
+  .trust-item { flex-direction: row; }
 
-  .cta-box { text-align: center; }
+  /* Section headings */
+  .section-title { font-size: 26px; }
+  .section-sub { font-size: 15px; }
+
+  /* Service cards */
+  .service-card { padding: 28px 20px; }
+
+  /* Mid CTA */
+  .mid-cta-box { padding: 32px 20px; text-align: center; }
+  .mid-cta-box .d-flex { justify-content: center; }
+  .mid-cta-box .col-lg-5 { text-align: center !important; }
+  .mid-cta-box .btn { width: 100%; justify-content: center; margin-bottom: 8px; }
+
+  /* Testimonials */
+  .testimonial-card { padding: 24px 18px; }
+
+  /* Proof bar */
+  .proof-item { padding: 16px 8px; }
+  .proof-number { font-size: 28px; }
+
+  /* FAQ */
+  .faq-btn { font-size: 14px; padding: 14px 16px !important; }
+  .faq-body { font-size: 14px; }
+
+  /* CTA / Newsletter */
+  .cta-box { padding: 32px 20px; text-align: center; }
+  .cta-box .d-flex { justify-content: center; }
   .newsletter-form .input-group { flex-direction: column; gap: 10px; }
   .newsletter-form .form-control { border-radius: 50px !important; }
   .newsletter-form .btn-gradient { border-radius: 50px !important; width: 100%; justify-content: center; }
 
-  .footer-bottom .col-md-6:last-child { text-align: left !important; margin-top: 8px; }
+  /* Contact */
+  .contact-item { padding: 16px; }
+  .contact-icon { width: 44px; height: 44px; font-size: 16px; }
+  .contact-form { padding: 28px 20px; }
 
-  .time-block span { font-size: 26px; }
-  .time-block { min-width: 50px; }
+  /* Footer */
+  .footer-top { padding: 60px 0 40px; }
+  .footer-bottom .col-md-6:last-child { text-align: left !important; margin-top: 8px; }
+  .footer-social { flex-wrap: wrap; }
 }
 
+/* ============================================================
+   RESPONSIVE — SMALL MOBILE (≤ 575px)
+   ============================================================ */
 @media (max-width: 575.98px) {
-  .hero-buttons { flex-direction: column; }
+  /* Hero */
+  .hero-title { font-size: 28px; }
+  .hero-buttons { flex-direction: column; gap: 12px; }
   .hero-buttons .btn { width: 100%; justify-content: center; }
-  .about-visual { height: auto; }
-  .about-card { position: static !important; width: 100% !important; margin-bottom: 12px; }
-  .about-gfx { display: none; }
+  .hero-badge { font-size: 9px; white-space: normal; text-align: center; }
+  .hero-stats .col-4 { padding: 0 6px; }
+
+  /* Navbar */
+  .logo-text { font-size: 20px; }
+
+  /* Sections */
+  .section-padding { padding: 50px 0; }
+  .section-title { font-size: 24px; }
+
+  /* Service cards */
+  .service-card { padding: 24px 16px; }
+  .service-icon { width: 52px; height: 52px; font-size: 20px; }
+
+  /* Trust badges row */
+  .trust-badge { font-size: 12px; padding: 6px 12px; }
+
+  /* Testimonials */
+  .proof-item { padding: 12px 4px; }
+  .proof-number { font-size: 24px; }
+
+  /* CTA buttons stacked */
+  .mid-cta-box .btn,
+  .cta-box .btn { width: 100%; justify-content: center; }
+
+  /* Contact form */
+  .contact-form .row > div { margin-bottom: 0; }
+
+  /* Footer links */
+  .footer-links a { font-size: 13px; }
+  .footer-social a { width: 36px; height: 36px; font-size: 14px; }
 }
