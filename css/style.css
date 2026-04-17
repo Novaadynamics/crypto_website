@@ -1455,7 +1455,7 @@ body {
 .back-to-top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 60px;
   width: 46px;
   height: 46px;
   background: var(--gradient);
@@ -1936,15 +1936,6 @@ body {
   .hero-section { padding-bottom: 40px; }
   .hero-title { font-size: 26px; }
   .hero-badge { font-size: 9px; padding: 5px 10px; }
-  .hero-buttons { flex-direction: column; gap: 10px; width: 100%; }
-  .hero-buttons .btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    box-sizing: border-box;
-  }
   .hero-stats .col-4 { padding: 0 4px; }
   .hero-stats .stat-item h3 { font-size: 18px; }
   .hero-stats .stat-item p { font-size: 11px; }
