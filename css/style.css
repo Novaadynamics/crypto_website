@@ -351,10 +351,10 @@ body {
 .hero-stats { margin-top: 48px; }
 
 .stat-item {
-  padding: 16px;
+  padding: 10px;
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius);
   text-align: center;
 }
 
