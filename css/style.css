@@ -1910,11 +1910,21 @@ option { color: black; }
   .cta-box { padding: 30px 20px; text-align: center; }
   .cta-box h2 { font-size: 24px; }
   .cta-box .d-flex { justify-content: center; flex-wrap: wrap; }
-  .newsletter-form .input-group { flex-direction: column; gap: 10px; }
-  .newsletter-form .form-control { border-radius: 50px !important; }
+  .newsletter-form .input-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .newsletter-form .input-group .form-control {
+    width: 100% !important;
+    border-radius: 50px !important;
+    border: 1px solid var(--border-color) !important;
+    min-width: 0;
+  }
   .newsletter-form .btn-gradient {
     border-radius: 50px !important;
-    width: 100%;
+    width: 100% !important;
+    display: flex;
     justify-content: center;
   }
 
