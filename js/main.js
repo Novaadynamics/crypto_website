@@ -1,5 +1,5 @@
 /* ============================================================
-   WEBZE — ICO & CRYPTO LANDING PAGE
+   BITCOIN — CRYPTO BROKERAGE LANDING PAGE
    Main JavaScript — GSAP + Three.js Edition
    ============================================================ */
 'use strict';
@@ -524,7 +524,7 @@ document.getElementById('newsletterForm')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = e.target.querySelector('button');
   gsap.to(btn, { scale: 0.95, duration: 0.1, yoyo: true, repeat: 1 });
-  showToast('🎉 Successfully subscribed to Webze updates!');
+  showToast('🎉 Successfully subscribed to Bitcoin updates!');
   e.target.querySelector('input').value = '';
 });
 

@@ -1,5 +1,5 @@
 /* ============================================================
-   WEBZE - ICO & CRYPTO LANDING PAGE
+   BITCOIN - CRYPTO BROKERAGE LANDING PAGE
    Main Stylesheet
    ============================================================ */
 
@@ -1814,7 +1814,7 @@ body {
   .cta-box { padding: 40px 28px; }
 
   .navbar-collapse {
-    background: rgba(6,7,27,0.98);
+    background: rgba(13,10,0,0.98);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 16px;
