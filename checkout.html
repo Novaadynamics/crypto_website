@@ -24,6 +24,12 @@
       padding: 40px 36px;
       box-shadow: var(--shadow);
     }
+    .checkout-card.widget-card {
+      background: transparent;
+      border: none;
+      box-shadow: 0 0 40px rgba(247,147,26,0.25), 0 0 80px rgba(247,147,26,0.1);
+      padding: 0;
+    }
     .checkout-title {
       font-size: 28px;
       font-weight: 800;
@@ -119,7 +125,7 @@
 
       <!-- Right: Helio checkout widget -->
       <div class="col-lg-6 col-md-7">
-        <div class="checkout-card">
+        <div class="checkout-card widget-card">
           <div id="helioCheckoutContainer"></div>
         </div>
       </div>
